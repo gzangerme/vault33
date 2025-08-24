@@ -62,67 +62,58 @@ This makes it easier for you (and your teammates) to see at a glance what powers
 
 ---
 
+
 ### 🔑 Core Productivity
 
-| Logo | Extension | Why it’s included |
-|------|-----------|------------------|
-| ![GitLens](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/git.svg) | **[GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)** | Deep Git blame/history/repo insights. |
-| ![EditorConfig](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/editorconfig.svg) | **[EditorConfig](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig)** | Enforces consistent style across editors/CI. |
-| ![SpellChecker](https://img.shields.io/badge/ABC-Spell_Checker-blue) | **[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)** | Catch typos in code/docs. |
-| ![Prettier](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/prettier.svg) | **[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)** | Opinionated formatting for JSON/YAML/Markdown. |
-| ![Docker](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/docker.svg) | **[Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker)** | Manage containers & images inside VS Code. |
-| ![GitHub](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/github.svg) | **[GitHub Actions](https://marketplace.visualstudio.com/items?itemName=github.vscode-github-actions)** | Monitor workflows directly in VS Code. |
-| 🛠️ | **[Makefile Tools](https://marketplace.visualstudio.com/items?itemName=ms-vscode.makefile-tools)** | Run/debug Makefile targets easily. |
+| Extension | Why it’s included |
+|-----------|------------------|
+| ![GitLens](https://img.shields.io/badge/GitLens-black?logo=git&logoColor=white) | Deep Git blame/history/repo insights. |
+| ![EditorConfig](https://img.shields.io/badge/EditorConfig-grey?logo=editorconfig&logoColor=white) | Enforces consistent style across editors/CI. |
+| ![Code Spell Checker](https://img.shields.io/badge/Code%20Spell%20Checker-blue?logo=readme&logoColor=white) | Catch typos in code/docs. |
+| ![Prettier](https://img.shields.io/badge/Prettier-ff69b4?logo=prettier&logoColor=white) | Opinionated formatting for JSON/YAML/Markdown. |
+| ![Docker](https://img.shields.io/badge/Docker-2496ED?logo=docker&logoColor=white) | Manage containers & images inside VS Code. |
+| ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-181717?logo=githubactions&logoColor=white) | Monitor workflows directly in VS Code. |
+| ![Makefile Tools](https://img.shields.io/badge/Makefile%20Tools-grey?logo=gnu&logoColor=white) | Run/debug Makefile targets easily. |
 
 ---
 
 ### 🐍 Python
 
-| Logo | Extension | Why it’s included |
-|------|-----------|------------------|
-| ![Python](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/python.svg) | **[Python](https://marketplace.visualstudio.com/items?itemName=ms-python.python)** | Debugging, testing, env mgmt. |
-| ![Pylance](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/microsoft.svg) | **[Pylance](https://marketplace.visualstudio.com/items?itemName=ms-python.vscode-pylance)** | Fast IntelliSense & type checking. |
-| 🐦 | **[Ruff](https://marketplace.visualstudio.com/items?itemName=charliermarsh.ruff)** | Ultra-fast Python linter/formatter. |
-| 📓 | **[Jupyter](https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter)** | Run notebooks inline. |
+| Extension | Why it’s included |
+|-----------|------------------|
+| ![Python](https://img.shields.io/badge/Python-3776AB?logo=python&logoColor=white) | Debugging, testing, env mgmt. |
+| ![Pylance](https://img.shields.io/badge/Pylance-0078D7?logo=microsoft&logoColor=white) | Fast IntelliSense & type checking. |
+| ![Ruff](https://img.shields.io/badge/Ruff-000000?logo=python&logoColor=white) | Ultra-fast Python linter/formatter. |
+| ![Jupyter](https://img.shields.io/badge/Jupyter-F37626?logo=jupyter&logoColor=white) | Run notebooks inline. |
 
 ---
 
 ### 🐹 Go
 
-| Logo | Extension | Why it’s included |
-|------|-----------|------------------|
-| ![Go](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/go.svg) | **[Go](https://marketplace.visualstudio.com/items?itemName=golang.Go)** | Provides `gopls`, linting, debug/test integration. |
+| Extension | Why it’s included |
+|-----------|------------------|
+| ![Go](https://img.shields.io/badge/Go-00ADD8?logo=go&logoColor=white) | Provides `gopls`, linting, debug/test integration. |
 
 ---
 
 ### 🗄️ SQL / dbt
 
-| Logo | Extension | Why it’s included |
-|------|-----------|------------------|
-| ![dbt](https://raw.githubusercontent.com/dbt-labs/dbt-styleguide/main/img/dbt-logo-full.svg) | **[dbt Power User](https://marketplace.visualstudio.com/items?itemName=batisteo.vscode-dbt-power-user)** | Explore dbt projects, run models/tests. |
-| ![dbt](https://raw.githubusercontent.com/dbt-labs/dbt-styleguide/main/img/dbt-logo-full.svg) | **[dbt Formatter](https://marketplace.visualstudio.com/items?itemName=jberizbeitia.vscode-dbt-formatter)** | Auto-format dbt SQL + Jinja. |
-| ![SQL](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/mysql.svg) | **[SQLTools](https://marketplace.visualstudio.com/items?itemName=mtxr.sqltools)** | Run SQL queries across DBs. |
-| 📐 | **[Format SQL](https://marketplace.visualstudio.com/items?itemName=a5hk.format-sql)** | Quick SQL formatting. |
-| ![SQLite](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/sqlite.svg) | **[SQLite Viewer](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite)** | Inspect local SQLite DBs. |
+| Extension | Why it’s included |
+|-----------|------------------|
+| ![dbt](https://img.shields.io/badge/dbt-FB542B?logo=dbt&logoColor=white) **dbt Power User** | Explore dbt projects, run models/tests. |
+| ![dbt](https://img.shields.io/badge/dbt-FB542B?logo=dbt&logoColor=white) **dbt Formatter** | Auto-format dbt SQL + Jinja. |
+| ![SQLTools](https://img.shields.io/badge/SQLTools-003B57?logo=mysql&logoColor=white) | Run SQL queries across DBs. |
+| ![Format SQL](https://img.shields.io/badge/Format%20SQL-336791?logo=postgresql&logoColor=white) | Quick SQL formatting. |
+| ![SQLite](https://img.shields.io/badge/SQLite-003B57?logo=sqlite&logoColor=white) | Inspect local SQLite DBs. |
 
 ---
 
 ### ☁️ Terraform / Cloud
 
-| Logo | Extension | Why it’s included |
-|------|-----------|------------------|
-| ![Terraform](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/terraform.svg) | **[Terraform](https://marketplace.visualstudio.com/items?itemName=hashicorp.terraform)** | HCL language server + plan/fmt integration. |
-| ![AWS](https://raw.githubusercontent.com/simple-icons/simple-icons/develop/icons/amazonaws.svg) | **[AWS Toolkit](https://marketplace.visualstudio.com/items?itemName=amazonwebservices.aws-toolkit-vscode)** | Browse AWS resources, run Lambdas, view logs. |
-
----
-
-### 🎨 Themes & Fun
-
-| Logo | Extension | Why it’s included |
-|------|-----------|------------------|
-| ![Pokémon](https://raw.githubusercontent.com/edent/SuperTinyIcons/master/images/svg/pokemon.svg) | **[Pokémon VS Code](https://marketplace.visualstudio.com/items?itemName=jakobhoeg.vscode-pokemon)** | Pokémon companion in editor. |
-| 🎨 | **[Pokémon Color Theme](https://marketplace.visualstudio.com/items?itemName=Shinymimikyu.pokemon-color)** | Pokémon-inspired color palette. |
-| 🧛 | **[Dracula Official](https://marketplace.visualstudio.com/items?itemName=dracula-theme.theme-dracula)** | High-contrast dark theme, popular among devs. |
+| Extension | Why it’s included |
+|-----------|------------------|
+| ![Terraform](https://img.shields.io/badge/Terraform-844FBA?logo=terraform&logoColor=white) | HCL language server + plan/fmt integration. |
+| ![AWS Toolkit](https://img.shields.io/badge/AWS-232F3E?logo=amazonaws&logoColor=FF9900) | Browse AWS resources, run Lambdas, view logs. |
 
 ---
 
