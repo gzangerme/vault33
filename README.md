@@ -1,4 +1,4 @@
-# 🚀 Data Engineer Workstation Bootstrap
+# Vault33
 
 ![Python](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)
 ![Go](https://img.shields.io/badge/Go-1.22-00ADD8?logo=go&logoColor=white)
@@ -31,30 +31,29 @@ It configures everything in a **modular, idempotent way** so you can get product
 ```bash
 chmod +x bootstrap/bootstrap.debian.sh
 ./bootstrap/bootstrap.debian.sh
-
-chmod +x bootstrap/bootstrap.macos.sh
-./bootstrap/bootstrap.macos.sh
+```
 
 ### 🍎 macOS
 ```bash
 chmod +x bootstrap/bootstrap.macos.sh
 ./bootstrap/bootstrap.macos.sh
+```
 
-🪟 Windows
-```bash
+### 🪟 Windows
+```powershell
 Set-ExecutionPolicy Bypass -Scope Process -Force
 .\bootstrap\bootstrap.windows.ps1
+```
 
-🐳 Dev Containers (Preferred)
+### 🐳 Dev Containers (Preferred)
 If you use Docker + VS Code:
 
-1) Clone this repo.
+1. Clone this repo.
+2. Open in VS Code.
+3. Select **“Reopen in Container”**.
+4. Everything installs inside a reproducible container.
 
-2) Open in VS Code.
-
-3) Select “Reopen in Container”.
-
-4) Everything installs inside a reproducible container.
+---
 
 ## 🧩 VS Code Extensions (Visual Catalog)
 
@@ -127,7 +126,9 @@ This makes it easier for you (and your teammates) to see at a glance what powers
 
 ---
 
-⚙️ VS Code Settings (with rationale)
+## ⚙️ VS Code Settings (with rationale)
+
+```jsonc
 {
   "editor.formatOnSave": true,                // Always auto-format
   "editor.codeActionsOnSave": {
@@ -137,13 +138,13 @@ This makes it easier for you (and your teammates) to see at a glance what powers
   "files.trimTrailingWhitespace": true,       // Clean diffs
   "files.insertFinalNewline": true,           // POSIX-friendly files
   "editor.tabSize": 2,                        // Default: JSON/YAML/SQL
-  "editor.rulers": [88,100,120],              // Visual line guides
+  "editor.rulers": [88, 100, 120],            // Visual line guides
 
   // Python
   "python.formatting.provider": "black",
   "python.testing.pytestEnabled": true,
   "python.analysis.typeCheckingMode": "basic",
-  "ruff.lint.args": ["--select","E,F,I,B","--ignore","E501"],
+  "ruff.lint.args": ["--select", "E,F,I,B", "--ignore", "E501"],
 
   // Go
   "go.useLanguageServer": true,
@@ -166,28 +167,25 @@ This makes it easier for you (and your teammates) to see at a glance what powers
   // Theme (default)
   "workbench.colorTheme": "Dracula"
 }
+```
 
-Why:
+### Why these settings?
 
-Save = format → consistent style.
+- **Save = format** → consistent style.
+- **Type checking** on, but not overly strict.
+- Hide caches like `.venv` or `.terraform`.
+- Rulers keep code style consistent across team.
+- **Black + Ruff** enforce Python standards.
+- **Staticcheck-style checks via gopls** for deeper Go analysis.
+- **sqlfluff** ensures clean, consistent SQL.
+- **Terraform CodeLens** shows useful inline info.
+- **Dracula** as default theme for eye comfort.
 
-Type checking on, but not overly strict.
+---
 
-Hide caches like .venv or .terraform.
+## 📂 Repo Layout
 
-Rulers keep code style consistent across team.
-
-Black + Ruff enforce Python standards.
-
-Staticcheck in Go for deeper analysis.
-
-sqlfluff ensures clean, consistent SQL.
-
-Terraform codelens shows plan info inline.
-
-Dracula default theme for eye comfort.
-
-📂 Repo Layout
+```text
 .
 ├── bootstrap/         # OS-specific scripts (Debian, macOS, Windows)
 ├── vscode/            # Extensions list, settings, keybindings, snippets
@@ -195,3 +193,8 @@ Dracula default theme for eye comfort.
 ├── devcontainer/      # Containerized dev env (preferred)
 ├── scripts/           # Modular language-specific installers
 └── README.md          # This documentation
+```
+
+---
+
+> ✨ “From zero to productive in minutes — on any OS.”
