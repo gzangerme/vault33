@@ -1,0 +1,12 @@
+{
+    "cte": {
+        "prefix": "cte",
+        "body": [
+            "WITH ${1:cte} AS (",
+            "  SELECT ${2:*}",
+            "  FROM ${3:table}",
+            ")",
+            "SELECT * FROM ${1:cte};"
+        ]
+    }
+}

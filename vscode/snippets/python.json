@@ -1,0 +1,11 @@
+{
+    "pytest": {
+        "prefix": "pytest",
+        "body": [
+            "import pytest",
+            "",
+            "def test_${1:name}():",
+            "    assert ${2:1} == ${3:1}"
+        ]
+    }
+}

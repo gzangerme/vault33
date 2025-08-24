@@ -1,0 +1,12 @@
+{
+    "main": {
+        "prefix": "gom",
+        "body": [
+            "package main",
+            "import \"fmt\"",
+            "func main() {",
+            "  fmt.Println(\"$1\")",
+            "}"
+        ]
+    }
+}

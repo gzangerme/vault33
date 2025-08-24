@@ -1,0 +1,29 @@
+dracula-theme.theme-dracula
+eamodio.gitlens
+EditorConfig.EditorConfig
+streetsidesoftware.code-spell-checker
+esbenp.prettier-vscode
+ms-azuretools.vscode-docker
+github.vscode-github-actions
+ms-vscode.makefile-tools
+
+ms-python.python
+ms-python.vscode-pylance
+charliermarsh.ruff
+ms-toolsai.jupyter
+
+golang.Go
+
+batisteo.vscode-dbt-power-user
+jberizbeitia.vscode-dbt-formatter
+mtxr.sqltools
+a5hk.format-sql
+alexcvzz.vscode-sqlite
+
+hashicorp.terraform
+aws.aws-toolkit-vscode
+
+jakobhoeg.vscode-pokemon
+Shinymimikyu.pokemon-color
+# or: KristhDev.kristhdev-pikachu-theme-vscode
+# optional: tonybaloney.vscode-pets

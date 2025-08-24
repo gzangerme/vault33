@@ -1,0 +1,68 @@
+{
+    // --- Editing hygiene ---
+    "editor.formatOnSave": true, // saves you keystrokes
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit", // clean imports when you want
+        "source.fixAll": "explicit" // run fixers on demand
+    },
+    "files.trimTrailingWhitespace": true, // keep diffs clean
+    "files.insertFinalNewline": true, // POSIX-friendly files
+    "editor.tabSize": 2, // common across YAML/JSON/SQL
+    "editor.rulers": [
+        88,
+        100,
+        120
+    ], // soft width guides
+    "files.exclude": { // hide noisy caches
+        "**/__pycache__": true,
+        "**/.pytest_cache": true,
+        "**/.venv": true,
+        "**/node_modules": true, // projects may have frontends
+        "**/.terraform": true
+    },
+    // --- Python ---
+    "python.defaultInterpreterPath": "python", // devcontainer resolves to 3.12
+    "python.formatting.provider": "black", // Black for strong conventions
+    "python.testing.pytestEnabled": true, // pytest by default
+    "python.analysis.typeCheckingMode": "basic", // catches many mistakes w/o noise
+    "ruff.lint.args": [
+        "--select",
+        "E,F,I,B",
+        "--ignore",
+        "E501"
+    ], // keep lines flexible
+    // --- Go ---
+    "go.useLanguageServer": true, // enables gopls features
+    "go.gopath": "~/.go",
+    "go.toolsManagement.autoUpdate": true, // keep go tools fresh
+    "go.formatTool": "gofmt", // canonical formatter
+    "go.lintTool": "golangci-lint",
+    "gopls": {
+        "staticcheck": true
+    }, // extra vetting
+    // --- SQL / dbt ---
+    "sqlfluff.dialect": "postgres", // change if BigQuery-only
+    "sqlfluff.linter.executablePath": "sqlfluff",
+    "dbt-power-user.queryLimit": 1000,
+    // --- Terraform ---
+    "terraform.languageServer": {
+        "external": true,
+        "args": [
+            "serve"
+        ]
+    },
+    "terraform.indexing": {
+        "enabled": true
+    },
+    "terraform.codelens.enabled": true,
+    // --- AWS Toolkit ---
+    "aws.profile": "default",
+    "aws.s3.presignedUrl.expiration": 3600,
+    // --- Git ---
+    "git.enableCommitSigning": false, // faster local commits (toggle if needed)
+    "git.autofetch": true,
+    // --- Jupyter ---
+    "jupyter.askForKernelRestart": false,
+    "workbench.colorTheme": "Dracula" // --- Theme (Pokémon) ---
+    // Set manually in Command Palette: "Preferences: Color Theme" → "Pokemon-theme" or "Pikachu Theme"
+}

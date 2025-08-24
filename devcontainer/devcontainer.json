@@ -1,0 +1,51 @@
+{
+    "name": "Data Eng Std",
+    "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+    "features": {
+        "ghcr.io/devcontainers/features/docker-in-docker:2": {},
+        "ghcr.io/devcontainers/features/aws-cli:1": {},
+        "ghcr.io/devcontainers/features/git:1": {},
+        "ghcr.io/devcontainers/features/terraform:1": {
+            "version": "1.8.5"
+        },
+        "ghcr.io/devcontainers/features/python:1": {
+            "version": "3.12"
+        },
+        "ghcr.io/devcontainers/features/go:1": {
+            "version": "1.22"
+        }
+    },
+    "postCreateCommand": "bash devcontainer/postCreate.sh",
+    "remoteUser": "vscode",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "dracula-theme.theme-dracula",
+                "eamodio.gitlens",
+                "EditorConfig.EditorConfig",
+                "streetsidesoftware.code-spell-checker",
+                "esbenp.prettier-vscode",
+                "ms-azuretools.vscode-docker",
+                "github.vscode-github-actions",
+                "ms-python.python",
+                "ms-python.vscode-pylance",
+                "charliermarsh.ruff",
+                "ms-toolsai.jupyter",
+                "golang.Go",
+                "batisteo.vscode-dbt-power-user",
+                "jberizbeitia.vscode-dbt-formatter",
+                "mtxr.sqltools",
+                "a5hk.format-sql",
+                "alexcvzz.vscode-sqlite",
+                "hashicorp.terraform",
+                "aws/aws-toolkit-vscode",
+                "jakobhoeg.vscode-pokemon", // 🧩 Pokémon in the editor
+                "Shinymimikyu.pokemon-color" // 🎨 Pokémon color theme (optional)
+            ],
+            "settings": {
+                "editor.formatOnSave": true,
+                "python.analysis.typeCheckingMode": "basic"
+            }
+        }
+    }
+}
